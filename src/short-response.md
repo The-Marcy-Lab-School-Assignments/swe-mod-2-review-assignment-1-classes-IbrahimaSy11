@@ -15,12 +15,12 @@ For example, a `Song` and a `MediaItem` have an inheritance relationship because
 
 ### Response 1
 
-1. Your response...
-2. Your response...
-3. Your response...
-4. Your response...
-5. Your response...
-6. Your response...
+1. **Composition** – A car has an engine. The engine is part of the car, but it is not a type of car.
+2. **Inheritance** – A dog is an animal, meaning a dog is a specific type of animal.
+3. **Composition** – A classroom has many students. Students can exist on their own, but a classroom is made up of students.
+4. **Inheritance** – A rectangle is a type of shape. It shares general shape properties but has its own specific rules.
+5. **Composition** – A computer has a CPU inside it. The CPU is a component, not a type of computer.
+6. **Inheritance** – A manager is a type of employee. Managers are employees with extra responsibilities.
 
 ---
 
@@ -32,7 +32,9 @@ In your own words, explain what polymorphism means and why it is useful. Use the
 
 ### Response 2
 
-Your response...
+Polymorphism means that different objects can use the same method name but behave differently depending on what type of object they are. In the MediaItem example, Song, Podcast, and Audiobook all have a `play()` method, but each one returns a different message.
+
+This is useful because it lets us treat all media items the same way in our code. We can store them in one array and call `play()` on each item without checking what type it is. The correct method runs automatically, which makes the code cleaner and easier to manage.
 
 ---
 
@@ -46,6 +48,6 @@ b) Give an example of when you would want to use a static property or method ins
 
 ### Response 3
 
-a) Your response...
+a) An instance property belongs to a specific object created from a class, so each object has its own values. A static property belongs to the class itself and is shared by all objects.
 
-b) Your response...
+b) You would use a static property or method when the data or behavior should apply to the entire class, not just one object. For example, a static method could be used for helper logic, or a static property could track information shared across all instances.
